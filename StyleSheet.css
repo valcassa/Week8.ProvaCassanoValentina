@@ -1,0 +1,556 @@
+﻿
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1530374195309-8c25022c4753?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JhbmdlJTIwc21va2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80); background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header {
+    color: saddlebrown;
+    font-family: 'Times New Roman';
+    float: right;
+}
+ 
+
+h3 {
+    color: saddlebrown;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+ }
+
+.shadow {
+    display: block;
+    position: relative;
+}
+
+.flex {
+width: 70%;
+position: center;
+}
+
+.shadow:before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    -moz-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,1);
+    -webkit-box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,1);
+}
+
+
+.slideshow {
+    list-style-type: none;
+    opacity: 0.7;
+ }
+
+    .slideshow,
+    .slideshow:after {
+        top: auto;
+        / width: 90%;
+        height: 90%;
+        left: 0px;
+        z-index: 0;
+     }
+
+        .slideshow li span {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            top: 130px;
+            left: 60px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 30s linear infinite 0s;
+        }
+
+
+
+        .slideshow li:nth-child(1) span {
+            background-image: url("https://jordanandeddie.files.wordpress.com/2016/11/feat-1.jpg?quality=80&strip=info&w=1440");
+        }
+
+        .slideshow li:nth-child(2) span {
+            background-image: url("https://www.justnerd.it/wp-content/uploads/2018/10/Animali-Fantastici.jpg");
+            animation-delay: 6s;
+        }
+
+        .slideshow li:nth-child(3) span {
+            background-image: url(" https://www.stuttgarter-nachrichten.de/media.media.a8d028c6-eb5d-4af2-9fef-0f105c893cfb.original1024.jpg");
+            animation-delay: 12s;
+        }
+
+        .slideshow li:nth-child(4) span {
+            background-image: url("https://www.ilbacodaseta.org/wp-content/uploads/2016/11/Animali-fantastici-e-dove-trovarli-e1479766935138.jpg");
+            animation-delay: 18s;
+        }
+
+        .slideshow li:nth-child(5) span {
+            background-image: url("https://amalfinotizie.it/wp-content/uploads/2018/12/760448-e1544635625826.jpg");
+            animation-delay: 24s;
+        }
+
+
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    25% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0
+    }
+
+    8% {
+        opacity: 1
+    }
+
+    17% {
+        opacity: 1
+    }
+
+    19% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+
+.no-cssanimations .cb-slideshow li span {
+    opacity: 1;
+}
+
+.frame {
+    display: inline-block;
+    background-image: url(https://zeevector.com/wp-content/uploads/2021/02/black-grey-gradient-background-768x576.jpg);
+    opacity: .8;
+    border-style: solid;
+    border-color: dimgrey;
+    margin-left: 1200px;
+    width: 500px;
+    height: 755px;
+    color: white;
+    padding: 40px 40px 40px 40px;
+
+}
+
+.maincontent {
+    display: inline-block;
+    background-image: url(https://zeevector.com/wp-content/uploads/2021/02/black-grey-gradient-background-768x576.jpg);
+    opacity: .8;
+    border-style: solid;
+    border-color: dimgrey;
+    margin-left:  30%;
+    width: 50%;
+    color: white;
+    padding: 40px 40px 40px 40px;
+ }
+
+
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: 590px;
+    height: 50px;
+    background-color: black;
+    font-size: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+    nav a {
+        line-height: 50px;
+        height: 100%;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav .animation {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        z-index: 0;
+        transition: all .5s ease 0s;
+     }
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+a:nth-child(5) {
+    width: 120px;
+}
+
+nav .start-home, a:nth-child(1):hover ~ .animation {
+    width: 100px;
+    left: 0;
+    background-color: saddlebrown;
+}
+
+nav .start-about, a:nth-child(2):hover ~ .animation {
+    width: 110px;
+    left: 100px;
+    background-color: saddlebrown;
+}
+
+nav .start-blog, a:nth-child(3):hover ~ .animation {
+    width: 100px;
+    left: 210px;
+    background-color: saddlebrown;
+}
+
+nav .start-portefolio, a:nth-child(4):hover ~ .animation {
+    width: 160px;
+    left: 310px;
+    background-color: #9b59b6;
+}
+
+nav .start-contact, a:nth-child(5):hover ~ .animation {
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+span {
+    color: #2BD6B4;
+}
+
+body {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Cherry Swash', cursive;
+}
+
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+span {
+    color: #2BD6B4;
+}
+b {
+    color: darkred;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+}
+
+
+
+#logo {
+    float: right;
+}
+
+.safe {
+    clear: inline-start;
+    color: darkgoldenrod;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    text-shadow: -5pt 2pt 4pt white;
+}
+.footer {
+    position: fixed;
+    left: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 10pt;
+    background-color: white;
+    opacity: 0.5;
+    color: black;
+    text-align: center;
+}
+
+
+iframe {
+    opacity: 0.3;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    border-color: white;
+}
+    iframe:hover {
+        opacity: 1.0;
+        transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -webkit-transition: opacity .55s ease-in-out;
+    }
+img {
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    border-color: white;
+}
+
+    img:hover {
+        opacity: 1.0;
+        transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -webkit-transition: opacity .55s ease-in-out;
+    }
+
+@media only screen and (max-width : 660px) {
+    ul li {
+        display: block;
+        float: none;
+    }
+
+    .hotel {
+        max-height: 0px;
+    }
+
+    .framefooter {
+        display: inline;
+        background-color: white;
+        opacity: .8;
+        border-radius: 15px;
+        width: 800px;
+        color: darkgoldenrod;
+        font-family: 'Times New Roman';
+        font-size: 16px;
+        text-shadow: -5pt 2pt 4pt white;
+        margin-bottom: 40px;
+    }
+
+    .frame {
+        display: inline;
+        background-color: white;
+        opacity: .8;
+        border-radius: 15px;
+        width: 800px;
+        height: 300px;
+    }
+
+    .camera {
+        max-width: 50%;
+    }
+
+
+    header {
+        color: saddlebrown;
+        font-family: 'Times New Roman';
+        float: right;
+        max-width: 100px;
+    }
+
+    h3 {
+        color: saddlebrown;
+        font-family: 'Times New Roman';
+        font-size: 20px;
+        float: left;
+        max-width: 200px;
+    }
+}
+.form {
+    background-color: saddlebrown ;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+}
+
+.title {
+    color: #eee;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.subtitle {
+    color: #eee;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic1 {
+    margin-top: 40px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.input {
+    background-color: black;
+     border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.cut {
+    background-color: black;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+}
+
+.cut-short {
+    width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: firebrick;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+}
+
+.input:focus ~ .placeholder {
+    color: #dc2f55;
+}
+
+.submit {
+    background-color: #FF9445;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    // outline: 0;
+    text-align: center;
+    width: 100%;
+}
+
+    .submit:active {
+        background-color: black;
+    }
