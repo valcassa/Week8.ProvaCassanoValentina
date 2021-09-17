@@ -1,0 +1,19 @@
+1. www.nomesito.com o .net o .it
+Dominio di 3° livello www
+Dominio di 2° livello nomesito
+Dominio di 1° livello .com/.net/.it
+
+2. opzioni per attributo a,c,d e opzioni per valore c
+
+3. .li{}
+
+4. p {
+            background-color: #inserirecodicecolore;  
+        }
+li{
+            background-color: #inserirecodicecolore;  
+        }
+
+5. <a href="www.avanade.com" title="Avanade">Link</a>
+
+6. c) <h1>
